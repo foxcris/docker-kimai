@@ -1,4 +1,4 @@
-# docker-kimai Installation
+# docker-kimai installation
 
 A simple apache installation with all required modules to run kimai. Let's encrypt can be used to optain a valid certificate. 
   
