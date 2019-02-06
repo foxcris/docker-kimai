@@ -41,6 +41,10 @@ RUN mv /etc/letsencrypt/ /etc/letsencrypt_default
 
 RUN rm /var/www/html/index.html
 
+VOLUME /var/log/apache2
+VOLUME /etc/letsencrypt
+VOLUME /var/www/html/includes
+
 EXPOSE 80 443
 COPY docker-entrypoint.sh /
 RUN chmod 755 /docker-entrypoint.sh
