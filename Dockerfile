@@ -36,8 +36,11 @@ RUN curl -L -o kimai.zip https://github.com/kimai/kimai/releases/download/${KIMA
   && rm *.zip
 
 RUN mv /var/www/html/includes /var/www/html/includes_default
+RUN mkdir /var/www/html/includes
 RUN mv /etc/apache2/sites-available/ /etc/apache2/sites-available_default
+RUN mkdir /etc/apache2/sites-available
 RUN mv /etc/letsencrypt/ /etc/letsencrypt_default
+RUN mkdir /etc/letsencrypt
 
 RUN rm /var/www/html/index.html
 
